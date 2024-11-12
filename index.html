@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/hamb-8.png" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+
+    <script src="https://kit.fontawesome.com/0ad878e61e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/output.css">
+    <title>Lopes-Burguer</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="h-full w-full flex flex-col justify-center items-center">
+            <img src="assets/hamb-1.png" alt="logo"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Lopes Burguer</h1>
+
+            <span class="text-white font-medium">Rua port 10, Itupeva-SP</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg à Dom - 18:00 as 22:00</span>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Nosso Menu</h2>
+
+    <!-- Menu -->
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+            <!-- Inicio Produto item-->
+            <div class="flex gap-2">
+                <img src="assets/hamb-1.png" alt="Hamburguer house"
+                    class="w-28 h-28 rounded-md hover:scale-110 duration-300">
+
+                <div>
+                    <p class="font-bold">Hamburguer house</p>
+                    <p class="text-sm">Um hambúrguer artesanal com carne suculenta, queijo derretido, vegetais frescos e
+                        o molho especial da casa, servido no pão macio. Perfeito para quem busca um lanche saboroso e
+                        feito com capricho.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$: 18.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer house"
+                            data-price="18.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Fim Produto item-->
+
+            <!-- Inicio Produto item-->
+            <div class="flex gap-2">
+                <img src="assets/hamb-2.png" alt="Hamburguer duplo"
+                    class="w-28 h-28 rounded-md hover:scale-110 duration-300">
+
+                <div>
+                    <p class="font-bold">Hamburguer duplo</p>
+                    <p class="text-sm">Um hambúrguer artesanal com carne suculenta, queijo derretido, vegetais frescos e
+                        o molho especial da casa, servido no pão macio. Perfeito para quem busca um lanche saboroso e
+                        feito com capricho.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$: 32.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer-duplo"
+                            data-price="32.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Fim Produto item-->
+
+            <!-- Inicio Produto item-->
+            <div class="flex gap-2">
+                <img src="assets/hamb-8.png" alt="X-salada" class="w-28 h-28 rounded-md hover:scale-110 duration-300">
+
+                <div>
+                    <p class="font-bold">X-salada</p>
+                    <p class="text-sm">Um hambúrguer artesanal com carne suculenta, queijo derretido, vegetais frescos e
+                        o molho especial da casa, servido no pão macio. Perfeito para quem busca um lanche saboroso e
+                        feito com capricho.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$: 30.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="X-salada"
+                            data-price="30.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Fim Produto item-->
+
+            <!-- Inicio Produto item-->
+            <div class="flex gap-4">
+                <img src="assets/hamb-4.png" alt="chicken burguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 duration-300">
+
+                <div>
+                    <p class="font-bold">Chicken burguer</p>
+                    <p class="text-sm">Um hambúrguer artesanal com carne suculenta, queijo derretido, vegetais frescos e
+                        o molho especial da casa, servido no pão macio. Perfeito para quem busca um lanche saboroso e
+                        feito com capricho.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$: 33.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="chicken-burguer"
+                            data-price="33.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Fim Produto item-->
+
+            <!-- Inicio Produto item-->
+            <div class="flex gap-4">
+                <img src="assets/hamb-6.png" alt="chicken burguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 duration-300">
+
+                <div>
+                    <p class="font-bold">Giga</p>
+                    <p class="text-sm">Um hambúrguer artesanal com carne suculenta, queijo derretido, vegetais frescos e
+                        o molho especial da casa, servido no pão macio. Perfeito para quem busca um lanche saboroso e
+                        feito com capricho.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$: 43.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Giga" data-price="43.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Fim Produto item-->
+
+            <!-- Inicio Produto item-->
+            <div class="flex gap-4">
+                <img src="assets/hamb-5.png" alt="chicken burguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 duration-300">
+
+                <div>
+                    <p class="font-bold">Coloço</p>
+                    <p class="text-sm">Um hambúrguer artesanal com carne suculenta, queijo derretido, vegetais frescos e
+                        o molho especial da casa, servido no pão macio. Perfeito para quem busca um lanche saboroso e
+                        feito com capricho.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$: 48.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coloço" data-price="48.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Fim Produto item-->
+
+        </main>
+
+        <section class="mx-auto max-w-7xl my-2">
+            <h2 class="font-bold text-3xl">Bebidas</h2>
+        </section>
+
+        <!-- bebidas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+            <!-- Inicio bebida item-->
+            <div class="flex gap-4 w-full">
+                <img src="assets/refri-1.png" alt="Coca Lata" class="w-28 h-28 rounded-md hover:scale-110 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Coca Lata 360ml</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$: 6.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca-Lata"
+                            data-price="6.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Fim bebida item-->
+
+            <!-- Inicio bebida item-->
+            <div class="flex gap-4 w-full">
+                <img src="assets/refri-2.png" alt="Guaraná Lata"
+                    class="w-28 h-28 rounded-md hover:scale-110 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Guaraná Lata 360ml</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$: 6.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guaraná-Lata"
+                            data-price="6.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Fim bebida item-->
+        </div>
+        <!-- bebidas -->
+
+    </div>
+    <!-- Menu -->
+
+    <!-- Modal -->
+    <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="text-bold mt-4">Endereço de entrega:</p>
+            <input type="text" placeholder="Digite seu endereço completo" id="address"
+                class="w-full border-2 p-1 rounded my-1" />
+
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <!-- Finalizar pedido -->
+    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="felx items-center text-white font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <!-- Finalizar pedido -->
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
